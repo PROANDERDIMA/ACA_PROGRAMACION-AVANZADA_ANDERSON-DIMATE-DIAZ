@@ -1,0 +1,263 @@
+# 🧑‍💻 EJERCICIO – GESTIÓN DE ESTUDIANTES CON NODE.JS
+
+## 📌 Contexto
+
+Una institución educativa necesita un pequeño sistema para analizar la información académica de sus estudiantes.
+
+Para este ejercicio se cuenta con un **array de objetos** que contiene la información de diferentes estudiantes.
+
+El objetivo es desarrollar un programa utilizando **Node.js y JavaScript**, creando diferentes funciones que permitan consultar, filtrar y analizar la información.
+
+### 📦 Datos iniciales
+
+Utilice el siguiente array de objetos:
+
+```js
+const estudiantes = [
+    {
+        id: 1,
+        nombre: "Andrés",
+        edad: 21,
+        carrera: "Ingeniería de Sistemas",
+        semestre: 5,
+        promedio: 4.2
+    },
+    {
+        id: 2,
+        nombre: "Laura",
+        edad: 20,
+        carrera: "Administración",
+        semestre: 4,
+        promedio: 3.8
+    },
+    {
+        id: 3,
+        nombre: "Carlos",
+        edad: 24,
+        carrera: "Ingeniería de Sistemas",
+        semestre: 7,
+        promedio: 2.9
+    },
+    {
+        id: 4,
+        nombre: "Mariana",
+        edad: 22,
+        carrera: "Contaduría",
+        semestre: 6,
+        promedio: 4.5
+    },
+    {
+        id: 5,
+        nombre: "Juan",
+        edad: 19,
+        carrera: "Ingeniería de Sistemas",
+        semestre: 3,
+        promedio: 3.2
+    },
+    {
+        id: 6,
+        nombre: "Sofía",
+        edad: 23,
+        carrera: "Administración",
+        semestre: 8,
+        promedio: 4.7
+    },
+    {
+        id: 7,
+        nombre: "Daniel",
+        edad: 25,
+        carrera: "Contaduría",
+        semestre: 9,
+        promedio: 2.7
+    },
+    {
+        id: 8,
+        nombre: "Valentina",
+        edad: 21,
+        carrera: "Ingeniería de Sistemas",
+        semestre: 5,
+        promedio: 3.9
+    },
+    {
+        id: 9,
+        nombre: "Sebastián",
+        edad: 22,
+        carrera: "Administración",
+        semestre: 6,
+        promedio: 3.4
+    },
+    {
+        id: 10,
+        nombre: "Camila",
+        edad: 20,
+        carrera: "Contaduría",
+        semestre: 4,
+        promedio: 4.1
+    }
+];
+```
+
+# 🎯 Puntos a realizar
+
+Desarrolle una función independiente para cada uno de los siguientes requerimientos.
+
+### 1. Listar todos los estudiantes
+
+Crear una función que reciba el array de estudiantes y muestre todos los estudiantes registrados.
+
+---
+
+### 2. Buscar un estudiante por ID
+
+Crear una función que reciba el array y un `id`.
+
+Debe retornar el estudiante que tenga ese ID.
+
+Si no existe, debe mostrar un mensaje indicando que el estudiante no fue encontrado.
+
+---
+
+### 3. Buscar estudiantes por carrera
+
+Crear una función que reciba el array y el nombre de una carrera.
+
+Debe retornar todos los estudiantes que pertenezcan a esa carrera.
+
+Ejemplo de búsqueda:
+
+```text
+Ingeniería de Sistemas
+```
+
+---
+
+### 4. Obtener estudiantes aprobados
+
+Crear una función que retorne únicamente los estudiantes que tengan un promedio **mayor o igual a 3.0**.
+
+---
+
+### 5. Obtener estudiantes reprobados
+
+Crear una función que retorne los estudiantes cuyo promedio sea **menor a 3.0**.
+
+---
+
+### 6. Calcular el promedio general
+
+Crear una función que calcule el promedio de todos los estudiantes.
+
+El resultado debe mostrar algo similar a:
+
+```text
+Promedio general: 3.75
+```
+
+---
+
+### 7. Encontrar al mejor estudiante
+
+Crear una función que encuentre al estudiante con el promedio más alto.
+
+Debe mostrar su información.
+
+Ejemplo:
+
+```text
+Mejor estudiante:
+Nombre: Sofía
+Promedio: 4.7
+```
+
+---
+
+### 8. Encontrar al estudiante con menor promedio
+
+Crear una función que encuentre al estudiante con el promedio más bajo.
+
+---
+
+### 9. Contar estudiantes por carrera
+
+Crear una función que permita saber cuántos estudiantes pertenecen a cada carrera.
+
+El resultado esperado debe tener una estructura similar a:
+
+```text
+Ingeniería de Sistemas: 4
+Administración: 3
+Contaduría: 3
+```
+
+---
+
+### 10. Buscar estudiantes por semestre
+
+Crear una función que reciba el array y un número de semestre.
+
+Debe retornar todos los estudiantes que estén cursando ese semestre.
+
+---
+
+### 11. Obtener estudiantes mayores de cierta edad
+
+Crear una función que reciba el array y una edad.
+
+Debe retornar los estudiantes que tengan una edad mayor a la indicada.
+
+Ejemplo:
+
+```text
+Edad: 22
+```
+
+Debe retornar los estudiantes mayores de 22 años.
+
+---
+
+### 12. Generar un reporte general
+
+Crear una función llamada `generarReporte()` que utilice las funciones desarrolladas anteriormente para mostrar en consola:
+
+```text
+========== REPORTE ACADÉMICO ==========
+
+Total de estudiantes:
+Estudiantes aprobados:
+Estudiantes reprobados:
+Promedio general:
+Mejor estudiante:
+Estudiante con menor promedio:
+
+========================================
+```
+
+## 📋 Reglas
+
+* El ejercicio debe realizarse utilizando **Node.js**.
+* Utilizar únicamente **JavaScript**.
+* Cada requerimiento debe estar implementado mediante una **función**.
+* Las funciones deben recibir los datos necesarios mediante parámetros.
+* Evitar repetir código innecesariamente.
+* No modificar el array original.
+* Los resultados deben mostrarse en la consola.
+* El código debe estar organizado y ser fácil de leer.
+
+## ⭐ Reto adicional
+
+Crear una función que permita ordenar los estudiantes de **mayor a menor promedio** y mostrar el ranking:
+
+```text
+===== RANKING =====
+
+1. Sofía - 4.7
+2. Mariana - 4.5
+3. Andrés - 4.2
+...
+```
+
+### 💡 Pregunta final
+
+Después de terminar el ejercicio, responda:
+
+**¿Qué ventajas tiene dividir el programa en diferentes funciones en lugar de escribir todo el código en un solo bloque?**

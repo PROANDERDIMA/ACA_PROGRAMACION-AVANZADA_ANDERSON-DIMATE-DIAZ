@@ -1,0 +1,12 @@
+{
+  "name": "cun-proyecto",
+  "version": "1.0.0",
+  "description": "Sistema de gestión de estudiantes",
+  "main": "logica/servicio.js",
+  "scripts": {
+    "start": "node logica/servicio.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
