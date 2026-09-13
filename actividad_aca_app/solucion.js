@@ -1,5 +1,5 @@
 const express = require('express');
-const { estudiantes } = require('./constante');
+const { estudiantes } = require('./estudiantes');
 
 const app = express();
 const PORT = 3000;
@@ -145,8 +145,9 @@ function generarReporte(arr) {
     console.log(`Mejor estudiante: ${mejor ? mejor.nombre + " (" + mejor.promedio + ")" : 'N/A'}`);
     console.log(`Estudiante con menor promedio: ${menor ? menor.nombre + " (" + menor.promedio + ")" : 'N/A'}`);
     console.log("========================================");
-
+    console.log("ANDERSON DIMATE DIAZ - 2026");
     return {
+
         totalEstudiantes: arr.length,
         aprobados: obtenerAprobados(arr).length,
         reprobados: obtenerReprobados(arr).length,

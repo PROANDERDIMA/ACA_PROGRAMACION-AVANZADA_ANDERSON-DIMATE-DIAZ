@@ -4,7 +4,7 @@
   "description": "Sistema de gestión de estudiantes",
   "main": "logica/servicio.js",
   "scripts": {
-    "start": "node logica/servicio.js"
+    "start": "node actividad_aca_app/solucion.js"
   },
   "dependencies": {
     "express": "^5.2.1"
